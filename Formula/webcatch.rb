@@ -5,21 +5,21 @@
 class Webcatch < Formula
   desc "Simple HTTP request inspector that captures and displays incoming requests in real-time"
   homepage "https://github.com/alwedo/webcatch"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alwedo/webcatch/releases/download/v0.3.0/webcatch_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d258215cd943a222ce6914a090290da0d7dfe9a15e60678a3d0fe6b6a2d7ecfe"
+      url "https://github.com/alwedo/webcatch/releases/download/v0.4.0/webcatch_0.4.0_darwin_amd64.tar.gz"
+      sha256 "5da7a5fc74db1eeb2def435f76fe5d7155b3150259446cfb29236fefb5e85f0c"
 
       define_method(:install) do
         bin.install "webcatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alwedo/webcatch/releases/download/v0.3.0/webcatch_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2aefcdc9be64036ec2cd946c3b2866107ae49553149368dce954dd955b0af4e0"
+      url "https://github.com/alwedo/webcatch/releases/download/v0.4.0/webcatch_0.4.0_darwin_arm64.tar.gz"
+      sha256 "799545cc81b644f21581484641754c8e121dd4236bb29c8e0bb0dcd09aced014"
 
       define_method(:install) do
         bin.install "webcatch"
@@ -29,15 +29,15 @@ class Webcatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alwedo/webcatch/releases/download/v0.3.0/webcatch_0.3.0_linux_amd64.tar.gz"
-      sha256 "4a10a4f2ede952fd54c69ac7bc3ccdae82756468d8e7b769d10da727253e49a3"
+      url "https://github.com/alwedo/webcatch/releases/download/v0.4.0/webcatch_0.4.0_linux_amd64.tar.gz"
+      sha256 "9bd672288c349dc8eb277324e86d292449dc855bdd9a2a525912b7ecab052122"
       define_method(:install) do
         bin.install "webcatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alwedo/webcatch/releases/download/v0.3.0/webcatch_0.3.0_linux_arm64.tar.gz"
-      sha256 "a04a68c1ceac2a86a4a925b1e0ee426f59428ff2f1b7d1b17ef824415166b590"
+      url "https://github.com/alwedo/webcatch/releases/download/v0.4.0/webcatch_0.4.0_linux_arm64.tar.gz"
+      sha256 "dd372525978acbaa8c3f0117a3a0f4a0dbe5f1386da6469eaf7679cf74e89beb"
       define_method(:install) do
         bin.install "webcatch"
       end
